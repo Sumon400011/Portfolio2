@@ -1,0 +1,111 @@
+@import "variables";
+
+
+// ===== mixins ===========
+@mixin background($img_url) {
+	background:url($img_url);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+}
+
+@mixin dark-overlay($opacity) {
+	background-color: rgba(0,0,0,$opacity);
+}
+@mixin red-overlay($opacity) {
+	background-color: rgba(186,24,27,$opacity);
+}
+
+.section-heading {
+	font-size: 3.5rem;
+	font-weight: 700!important;
+	color: $erie-black;
+}
+.sub-heading {
+	padding: 0px;
+    padding-left: 10px;
+    border-left: 3px solid $imperial-red;
+    font-weight: bold;
+    font-size: 28px;
+	color: $rich-black;
+}
+.paragraph-small{
+	font-size: 13px;
+    font-weight: 400;
+}
+
+body{
+	
+}
+
+
+#portfolio{
+	
+	.mix_container{
+		
+		.view{
+			border-radius: 25px;
+			min-height: 200px;
+			transition: 0.1s;
+
+			img{
+				min-height: 200px;
+			}
+
+			.mask{
+				visibility: hidden;
+				transition: 0.2s;
+
+				a{
+					background-color: $erie-black;
+					color: $light-gray;
+				}
+			}
+		}
+		.view:hover .mask{
+			@include red-overlay(0.5);
+			transition: 0.2s;
+			visibility: visible;
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+#testimonial{
+	background:url('../../assets/img/Ellipse_testimonial.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	.card{
+		border-radius: 40px;
+
+		.card-body{
+			hr{
+				margin-right:100%;
+				border-top: 2px solid rgba(0,0,0,.1);
+			}
+
+			.compliment-text{
+				min-height: 100px;
+				// max-height: 140px;
+				// max-width:94%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.social-buttons{
+				a{
+					color: $white-color;
+					font-size: 0.8rem;
+					line-height: 30px;
+					text-align: center;
+					height: 30px;
+					width: 30px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}

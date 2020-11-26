@@ -1,0 +1,91 @@
+// ==== color variables =========
+$rich-black: #0B090A;
+$erie-black: #161A1D;
+$red-color: #FF2D20;
+$ruby-red: #A4161A;
+$imperial-red: #E5383B;
+$gray-color: #808080;
+$light-gray: #D3D3D3;
+$cultured-color: #F5F3F4;
+$white-color: #FFFFFF;
+
+
+//==== opacity ========
+$basic-opacity:0.5;
+
+
+// ==== Spacing =========
+
+$sizes:  15, 20, 25, 30, 35, 40, 45, 50, 75, 100;
+// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+
+@each $size in $sizes {
+  .m-#{$size} {
+    margin: $size + 0px;
+  }
+  .mb-#{$size} {
+    margin-bottom: $size + 0px;
+  }
+  .mt-#{$size} {
+    margin-top: $size + 0px;
+  }
+  .ml-#{$size} {
+    margin-left: $size + 0px;
+  }
+  .mr-#{$size} {
+    margin-right: $size + 0px;
+  }
+  .my-#{$size} {
+    margin-top: $size + 0px;
+    margin-bottom: $size + 0px;
+  }
+  .mx-#{$size} {
+    margin-left: $size + 0px;
+    margin-right: $size + 0px;
+  }
+
+
+  .p-#{$size} {
+    padding: $size + 0px;
+  }
+  .pb-#{$size} {
+    padding-bottom: $size + 0px;
+  }
+  .pt-#{$size} {
+    padding-top: $size + 0px;
+  }
+  .pl-#{$size} {
+    padding-left: $size + 0px;
+  }
+  .pr-#{$size} {
+    padding-right: $size + 0px;
+  }
+  .py-#{$size} {
+    padding-top: $size + 0px;
+    padding-bottom: $size + 0px;
+  }
+  .px-#{$size} {
+    padding-left: $size + 0px;
+    padding-right: $size + 0px;
+  }
+
+  
+}
+
+// minimum and maximum height width
+$nums: 25, 50, 75, 100;
+
+@each $num in $nums {
+  .min-h#{$num} {
+    min-height: $num + 0vh;
+  }
+  .max-h#{$num} {
+    max-height: $num + 0vh;
+  }
+  .min-w#{$num} {
+    min-width: $num + 0vw;
+  }
+  .max-w#{$num} {
+    min-height: $num + 0vw;
+  }
+}
