@@ -523,6 +523,33 @@
   font-size: 13px;
   font-weight: 400; }
 
+#about_me .interest .my_journey .media .icon {
+  border: 2px dotted #161A1D;
+  color: #161A1D;
+  height: 40px;
+  width: 40px;
+  line-height: 38px; }
+#about_me .interest .my_journey .media .icon:hover {
+  border: none;
+  background-color: #161A1D;
+  color: #D3D3D3; }
+#about_me .interest .my_journey .media .h6 {
+  font-weight: 600;
+  font-size: 0.9rem; }
+#about_me .interest .hobby .media .icon {
+  color: #161A1D;
+  height: 40px;
+  width: 40px;
+  line-height: 38px;
+  font-size: 1.5rem; }
+#about_me .interest .hobby .media .icon:hover {
+  border: none;
+  background-color: #161A1D;
+  color: #D3D3D3; }
+#about_me .interest .hobby .media .h6 {
+  font-weight: 600;
+  font-size: 1rem; }
+
 #portfolio .mix_container .view {
   border-radius: 25px;
   min-height: 200px;
@@ -542,12 +569,16 @@
   cursor: pointer; }
 
 #testimonial {
-  background: url("../../assets/img/Ellipse_testimonial.png");
+  background: url("../../assets/img/Ellipse_testimonial_half2.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size: 30%;
+  background-position: center;
+  background-position-x: right; }
   #testimonial .card {
     border-radius: 40px; }
+    #testimonial .card .card-body img {
+      max-width: 250px;
+      max-height: 250px; }
     #testimonial .card .card-body hr {
       margin-right: 100%;
       border-top: 2px solid rgba(0, 0, 0, 0.1); }

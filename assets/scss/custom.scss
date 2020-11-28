@@ -40,6 +40,69 @@ body{
 }
 
 
+
+#about_me{
+
+	.interest{
+
+		.my_journey{
+
+			.media{
+
+				.icon{
+					border: 2px dotted $erie-black;
+					color: $erie-black;
+					height: 40px;
+					width: 40px;
+					line-height: 38px;
+				}
+
+				.icon:hover{
+					border: none;
+					background-color: $erie-black;
+					color: $light-gray;
+				}
+				.h6{
+					font-weight:600;
+					font-size: 0.9rem;
+				}
+			}
+			
+		}
+
+		
+		.hobby{
+			
+			.media{
+
+				.icon{
+					// border: 2px dotted $erie-black;
+					color: $erie-black;
+					height: 40px;
+					width: 40px;
+					line-height: 38px;
+					font-size: 1.5rem;
+					
+				}
+
+				.icon:hover{
+					border: none;
+					background-color: $erie-black;
+					color: $light-gray;
+				}
+				.h6{
+					font-weight:600;
+					font-size: 1rem;
+				}
+			}
+		}
+		
+
+	}
+}
+
+
+
 #portfolio{
 	
 	.mix_container{
@@ -75,14 +138,21 @@ body{
 
 
 #testimonial{
-	background:url('../../assets/img/Ellipse_testimonial.png');
+	background:url('../../assets/img/Ellipse_testimonial_half2.png');
 	background-repeat:no-repeat;
-	background-size: cover;
+	background-size: 30%;
 	background-position: center;
+	background-position-x: right;
+
 	.card{
 		border-radius: 40px;
 
 		.card-body{
+			img{
+				max-width: 250px;
+				max-height: 250px;
+			}
+
 			hr{
 				margin-right:100%;
 				border-top: 2px solid rgba(0,0,0,.1);
