@@ -436,6 +436,11 @@ line-height: 22px;
 /* ==== timeline =========== */
 
 
+.dotted-scrollspy li {
+    display: block;
+    padding: 0 0.4rem;
+}
+
 
 
 

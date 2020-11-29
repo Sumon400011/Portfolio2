@@ -191,3 +191,59 @@ body{
 		}
 	}
 }
+
+
+#contact{
+	.address{
+		.card{
+
+			background-color: #242324;
+
+			.icon{
+				color: $imperial-red;
+				font-size: 10px;
+			}
+			.card-content{
+				color: $light-gray;
+			}
+		}
+	}
+	.contact_form{
+
+		form{
+			// input{
+			// 	background-color: #242324;
+			// 	font-size: 12px;
+			// 	padding-left: 20px;
+			// 	font-weight: 500;
+			// 	border: none;
+			// }
+			// textarea{
+				
+			// }
+			.form-control{
+				background-color: #242324;
+				font-size: 13px;
+				padding: 25px;
+				font-weight: 500;
+				border: none;
+				color: $gray-color;
+			}
+			.submit{
+				color: #E0E0E0;
+			}
+		}
+	}
+}
+
+
+
+#footer{
+	.footer-icons{
+		
+		a:hover{
+			color: $imperial-red!important;
+			transition: 0.2s;
+		}
+	}
+}

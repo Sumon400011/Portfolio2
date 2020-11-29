@@ -597,4 +597,25 @@
       width: 30px;
       border-radius: 50%; }
 
+#contact .address .card {
+  background-color: #242324; }
+  #contact .address .card .icon {
+    color: #E5383B;
+    font-size: 10px; }
+  #contact .address .card .card-content {
+    color: #D3D3D3; }
+#contact .contact_form form .form-control {
+  background-color: #242324;
+  font-size: 13px;
+  padding: 25px;
+  font-weight: 500;
+  border: none;
+  color: #808080; }
+#contact .contact_form form .submit {
+  color: #E0E0E0; }
+
+#footer .footer-icons a:hover {
+  color: #E5383B !important;
+  transition: 0.2s; }
+
 /*# sourceMappingURL=custom.css.map */
