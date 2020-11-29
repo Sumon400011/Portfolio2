@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
-<body >
+<body>
 
 		<div id="head"></div>
 
@@ -498,10 +498,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="d-flex mb-4 flex-wrap justify-content-lg-start justify-content-md-center justify-content-center">
-						<button class="btn btn-primary btn-sm font-weight-bold" data-filter="all">All</button>
-						<button class="btn btn-primary btn-sm font-weight-bold" data-filter=".single">Single Page</button>
-						<button class="btn btn-primary btn-sm font-weight-bold" data-filter=".dashboard">Dashboard</button>
-						<button class="btn btn-primary btn-sm font-weight-bold" data-filter=".others">Others</button>
+						<button class="btn btn-primary btn-sm font-weight-bold" data-mixitup-control data-filter="all">All</button>
+						<button class="btn btn-primary btn-sm font-weight-bold" data-mixitup-control data-filter=".single">Single Page</button>
+						<button class="btn btn-primary btn-sm font-weight-bold" data-mixitup-control data-filter=".dashboard">Dashboard</button>
+						<button class="btn btn-primary btn-sm font-weight-bold" data-mixitup-control data-filter=".others">Others</button>
 					</div>
 				</div>
 			</div><!-- row -->
@@ -858,17 +858,29 @@
 
     <ul class="nav flex-column ">
 
-      <li class="nav-item "><a class="nav-link " href="#intro-section"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#intro-section" data-toggle="tooltip" data-placement="left" title="Intro"><span></span></a>
+      </li>
 
-      <li class="nav-item "><a class="nav-link " href="#about_me"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#about_me" data-toggle="tooltip" data-placement="left" title="About Me"><span></span></a>
+      </li>
 
-      <li class="nav-item "><a class="nav-link " href="#experience"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#experience" data-toggle="tooltip" data-placement="left" title="Edication & Experience"><span></span></a>
+      </li>
 
-      <li class="nav-item "><a class="nav-link " href="#skills_set"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#skills_set" data-toggle="tooltip" data-placement="left" title="Skills Set"><span></span></a>
+      </li>
 
-      <li class="nav-item "><a class="nav-link " href="#portfolio"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#portfolio" data-toggle="tooltip" data-placement="left" title="Portfolio"><span></span></a>
+      </li>
 
-      <li class="nav-item "><a class="nav-link " href="#contact"><span></span></a></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#contact" data-toggle="tooltip" data-placement="left" title="Contact"><span></span></a>
+      </li>
 
     </ul>
 
@@ -933,7 +945,7 @@
 
     // Adding animations to the sections
     $("section").addClass("wow fadeIn");
-    
+
     // ======= initialize scrollspy =======
     $('body').scrollspy({
       target: '.dotted-scrollspy'
@@ -941,8 +953,12 @@
 
     // ======= tooltip =======
     $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip({
+        trigger:'hover'
+      });
     });
+
+  
 
 
 
@@ -1047,13 +1063,23 @@
 
 		// =========== Mixitup ================
 		$(document).ready(function(){
-			 var mixer = mixitup('.mix_container');
+        var container = document.querySelector('.mix_container');
+        // var mixer = mixitup('.mix_container');
+
+        var mixer = mixitup(container, {
+          controls: {
+            toggleLogic: 'and'
+          }
+        });
 		});
+    
 
 
 
     // Animations Init
     // new WOW().init();
+
+
 
    	$( document ).ready(function() {
 			new WOW().init();
