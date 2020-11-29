@@ -544,11 +544,13 @@
   font-size: 1.5rem; }
 #about_me .interest .hobby .media .icon:hover {
   border: none;
-  background-color: #161A1D;
-  color: #D3D3D3; }
+  color: #E5383B; }
 #about_me .interest .hobby .media .h6 {
   font-weight: 600;
   font-size: 1rem; }
+
+#skills_set .card .view {
+  color: #E5383B !important; }
 
 #portfolio .mix_container .view {
   border-radius: 25px;

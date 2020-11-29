@@ -61,6 +61,7 @@ body{
 					border: none;
 					background-color: $erie-black;
 					color: $light-gray;
+					// color: $imperial-red;
 				}
 				.h6{
 					font-weight:600;
@@ -76,7 +77,6 @@ body{
 			.media{
 
 				.icon{
-					// border: 2px dotted $erie-black;
 					color: $erie-black;
 					height: 40px;
 					width: 40px;
@@ -87,8 +87,7 @@ body{
 
 				.icon:hover{
 					border: none;
-					background-color: $erie-black;
-					color: $light-gray;
+					color: $imperial-red;
 				}
 				.h6{
 					font-weight:600;
@@ -100,6 +99,19 @@ body{
 
 	}
 }
+
+
+#skills_set{
+	.card{
+		.view{
+			// unique-color-dark
+			color: $imperial-red!important;
+			
+		}
+	}
+}
+
+
 
 
 
