@@ -337,42 +337,54 @@ header .nav-item:hover:after{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #111;
+    background-color: #161A1D;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 20px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #E5383B;
+  /*color: #818181;*/
   display: block;
   transition: 0.3s;
+  font-weight: 500;
+  position: relative;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #E5383B;
 }
+
+
+.sidenav a:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  top: 50%;
+  left: 0px;
+  background-color: #E5383B;
+  transition: 0.2s;
+}
+.sidenav a:hover:after {
+  width: 100%;
+  transition: 0.2s;
+}
+
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 2px;
   font-size: 36px;
   margin-left: 50px;
+  color: #E5383B;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 /* ==== side Nav =========== */
 
 
