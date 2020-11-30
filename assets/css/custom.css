@@ -523,6 +523,9 @@
   font-size: 13px;
   font-weight: 400; }
 
+body {
+  scroll-behavior: smooth; }
+
 #about_me .interest .my_journey .media .icon {
   border: 2px dotted #161A1D;
   color: #161A1D;
@@ -551,6 +554,9 @@
 
 #skills_set .card .view {
   color: #E5383B !important; }
+#skills_set .card .card-body {
+  min-height: 220px;
+  border-bottom: 20px solid #F5F3F4; }
 
 #portfolio .mix_container .view {
   border-radius: 25px;
@@ -617,5 +623,51 @@
 #footer .footer-icons a:hover {
   color: #E5383B !important;
   transition: 0.2s; }
+
+@media only screen and (max-width: 991px) {
+  #portfolio .mix_container .view {
+    border-radius: 25px;
+    min-height: auto;
+    transition: 0.1s; }
+    #portfolio .mix_container .view img {
+      min-height: auto; }
+    #portfolio .mix_container .view .mask {
+      visibility: hidden;
+      transition: 0.2s; }
+      #portfolio .mix_container .view .mask a {
+        background-color: #161A1D;
+        color: #D3D3D3; }
+  #portfolio .mix_container .view:hover .mask {
+    background-color: rgba(186, 24, 27, 0.5);
+    transition: 0.2s;
+    visibility: visible;
+    cursor: pointer; }
+
+  #testimonial {
+    background: url("../../assets/img/Ellipse_testimonial_half2.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    background-position-x: right; }
+    #testimonial .card {
+      border-radius: 40px; }
+      #testimonial .card .card-body img {
+        max-width: 100%;
+        max-height: auto; }
+      #testimonial .card .card-body hr {
+        margin-right: auto;
+        border-top: 2px solid rgba(0, 0, 0, 0.1); }
+      #testimonial .card .card-body .compliment-text {
+        min-height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      #testimonial .card .card-body .social-buttons a {
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        line-height: 30px;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%; } }
 
 /*# sourceMappingURL=custom.css.map */

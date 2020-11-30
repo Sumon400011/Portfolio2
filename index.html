@@ -40,8 +40,10 @@
   <!-- Your homepage style -->
   <link rel="stylesheet" href="assets/css/custom.css">
 
+
+
 </head>
-<body>
+<body >
 
 		<div id="head"></div>
 
@@ -54,34 +56,48 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar z-depth-0 pb-2">
             <div class="container-fluid">
                 <a class="navbar-brand font-weight-bold" href="#">SM</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button"  data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                  <!-- data-toggle="collapse" -->
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse font-weight-bold navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ml-auto smooth-scroll">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#head">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about_me" data-offset="90">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio" data-offset="90"> Portfolios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial" data-offset="30">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
-                        </li>
-                    </ul>
-
+                <div class="collapse font-weight-bold navbar-collapse justify-content-center d-lg-block d-none" id="navbarTogglerDemo02">
+                  
+                  <ul class="navbar-nav ml-auto smooth-scroll">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#head">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_me" data-offset="100">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" data-offset="100"> Portfolios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial" data-offset="100">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-offset="100">Contact</a>
+                    </li>
+                  </ul>
+                  
                 </div>
             </div>
         </nav>
         <!-- Navbar -->
+
+
+        <!-- ============= side nav ================ -->
+        <div id="mySidenav" class="sidenav d-flex justify-content-center align-items-center text-center">
+          <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+        </div>
 
 
         <!-- Full Page Intro -->
@@ -109,7 +125,7 @@
                             <h4 class="subtext-header mt-2 mb-4">Frontend Web Developer</h4>
                             
                             <a href="#!" class="btn btn-rounded hireMe_btn">
-									   <i class="fas fa-paper-plane mr-2"></i> Hire Me
+									             <i class="fas fa-paper-plane mr-2"></i> Hire Me
                             </a>
                             
                         </div>
@@ -272,6 +288,8 @@
 
 
 
+
+
   <!-- ====== experience ====================== -->
 
   <section id="experience" class="w-100 py-50 min-h100 mb-50 border shadow" style="background-color: #f3f3f5;">
@@ -382,6 +400,7 @@
   </section>
 
 
+
   
 
 
@@ -390,13 +409,13 @@
   <section id="skills_set" class="w-100 py-50 min-h100 mb-50 border shadow">
    <div class="container">
 
-      <div class="section-heading wow fadeIn mb-4" data-wow-delay="0.2s">Skill Sets</div>
+      <div class="section-heading text-lg-left text-center wow fadeIn mb-4" data-wow-delay="0.2s">Skill Sets</div>
 
          <div class="row d-flex justify-content-center">
           
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
             
-               <div class="card card-cascade wider mb-3 wow fadeIn" data-wow-delay="0.1s">
+               <div class="card card-cascade wider mb-4 wow fadeIn" data-wow-delay="0.1s">
                  
                   <div class="view view-cascade gradient-card-header unique-color-dark">
                      <i class="fas fa-laptop fa-3x my-4 " aria-hidden="true"></i>
@@ -415,16 +434,17 @@
                         <li>HTML/CSS</li>
                      </ul>
 
-                     <div class="card-footer text-muted text-center mt-4"></div>
+                      <!-- <div class="card-footer text-muted text-center mt-4"></div> -->
                   </div>
+                  
                </div>
 
             </div>
           
 
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             
-            <div class="card card-cascade wider mb-3 wow fadeIn" data-wow-delay="0.3s">
+            <div class="card card-cascade wider mb-4 wow fadeIn" data-wow-delay="0.3s">
               
               <div class="view view-cascade gradient-card-header unique-color-dark">
                 <i class="fas fa-server fa-3x my-4 " aria-hidden="true"></i>
@@ -442,16 +462,16 @@
                     <li>ORM (Eloquent)</li>
                 </ul>
 
-                <div class="card-footer text-muted text-center mt-4"></div>
+                <!-- <div class="card-footer text-muted text-center mt-4"></div> -->
               </div>
 
             </div>
           </div>
           
 
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             
-            <div class="card card-cascade wider mb-3 wow fadeIn" data-wow-delay="0.4s">
+            <div class="card card-cascade wider mb-4 wow fadeIn" data-wow-delay="0.4s">
               
               <div class="view view-cascade gradient-card-header unique-color-dark">
                 <i class="fas fa-laptop fa-3x my-4 " aria-hidden="true"></i>
@@ -469,7 +489,7 @@
                     <li>ORM (Eloquent)</li>
                 </ul>
 
-                <div class="card-footer text-muted text-center mt-4"></div>
+                <!-- <div class="card-footer text-muted text-center mt-4"></div> -->
               </div>
 
             </div>
@@ -485,13 +505,14 @@
 
 
 
+
 	<!-- ====== Portfolio =====================  -->
 
 	<section id="portfolio" class="w-100 py-40 min-h100 mb-50 border shadow" style="background-color: #ECEFF1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="section-heading">Portfolio</div>
+					<div class="section-heading text-lg-left text-center">Portfolio</div>
 				</div>
 			</div>
 
@@ -605,13 +626,14 @@
 
 
 
+
 	<!-- ====== Testimonial =====================  -->
 
 	<section id="testimonial" class="w-100 py-50 min-h100 mb-50 border shadow">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="section-heading">Testimonial</div>
+					<div class="section-heading text-lg-left text-center">Testimonial</div>
 				</div>
 			</div>
 
@@ -623,8 +645,8 @@
             <div class="carousel-inner p-2">
              
               <div class="carousel-item  px-2 active">
-                <div class="card py-3">
-                  <div class="card-body m-4">
+                <div class="card py-lg-3 py-2">
+                  <div class="card-body m-lg-4 m-2 ">
                     <div class="row">
                       <div class="col-lg-4 d-flex mb-2 align-items-center">
                         <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
@@ -667,8 +689,8 @@
 
               <div class="carousel-item px-2 ">
                 
-                <div class="card py-3">
-                  <div class="card-body m-4">
+                <div class="card py-lg-3 py-2">
+                  <div class="card-body m-lg-4 m-2 ">
                     <div class="row">
                       <div class="col-lg-4 d-flex mb-2 align-items-center">
                         <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
@@ -711,8 +733,8 @@
 
               <div class="carousel-item">
                 
-                <div class="card py-3">
-                  <div class="card-body m-4">
+                <div class="card py-lg-3 py-2">
+                  <div class="card-body m-lg-4 m-2 ">
                     <div class="row">
                       <div class="col-lg-4 d-flex mb-2 align-items-center">
                         <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
@@ -875,9 +897,6 @@
 
 
 
-
-
-
 	<!-- =============== Footer ============-->
 	<footer id="footer" class="page-footer font-small blue-grey lighten-5"  >
 		
@@ -890,50 +909,38 @@
 
 	  <div style="background-color: #000;">
 	    <div class="container">
-
-	      <!-- Grid row-->
 	      <div class="row py-4">
-
-	        <!-- Grid column -->
 	        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
 
-							<a class="fb-ic mx-1 text-light font-weight-bold"> Portfolios</a>
+							<a class="mx-1 text-light font-weight-bold"> Portfolios</a>
 		          
-		          <a class="tw-ic mx-1 text-light font-weight-bold">My Resume</a>
+		          <a class="mx-1 text-light font-weight-bold">My Resume</a>
 
-		          <a class="gplus-ic mx-1 text-light font-weight-bold">About Me</a>
+		          <a class="mx-1 text-light font-weight-bold">About Me</a>
 
-		      </div><!-- Grid column -->
+		      </div>
 
 
 	        <!-- Grid column -->
 	        <div class="col-md-6 col-lg-7 text-center footer-icons text-md-right">
 
-	          <!-- Facebook -->
-	          <a class="fb-ic"><i class="fab fa-facebook-f white-text mr-4"></i></a>
+	          <a class="fb-ic"><i class="fab fa-facebook-f mr-4"></i></a>
 
-	          <!-- Twitter -->
-	          <a class="tw-ic"><i class="fab fa-twitter white-text mr-4"></i></a>
+	          <a class="tw-ic"><i class="fab fa-twitter mr-4"></i></a>
 
-	          <!-- Google +-->
-	          <a class="gplus-ic"><i class="fab fa-google-plus-g white-text mr-4"></i></a>
+	          <a class="gplus-ic"><i class="fab fa-google-plus-g mr-4"></i></a>
 
-	          <!--Linkedin -->
-	          <a class="li-ic"><i class="fab fa-linkedin-in white-text mr-4"></i></a>
+	          <a class="li-ic"><i class="fab fa-linkedin-in mr-4"></i></a>
 
-	          <!--Instagram-->
-	          <a class="ins-ic"><i class="fab fa-instagram white-text"></i></a>
+	          <a class="ins-ic"><i class="fab fa-instagram"></i></a>
 
 	        </div>
-	        <!-- Grid column -->
 
 	      </div>
-	      <!-- Grid row-->
 	      
 	    </div>
 	  </div>
 	</footer>
-	<!-- Footer -->
 
 
 
@@ -1016,6 +1023,9 @@
 
   <!-- wow -->
   <script type="text/javascript" src="assets/js/modules/wow.min.js"></script>
+
+  <!-- Sidenav js -->
+  <!-- <script type="text/javascript" src="assets/js/modules/sidenav.min.js"></script> -->
 	
 	<!-- Typed js -->
   <script type="text/javascript" src="assets/js/typed.js"></script>
@@ -1041,6 +1051,20 @@
 
 
 
+  <!-- Side Nav Script -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      // document.getElementById("body").style.marginLeft = "250px";
+      // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      // document.getElementById("body").style.marginLeft= "0";
+      // document.body.style.backgroundColor = "white";
+    }
+  </script>
 
 
   <!-- Your custom scripts (optional) -->
