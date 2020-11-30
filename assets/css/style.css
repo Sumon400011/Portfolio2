@@ -348,19 +348,21 @@ header .nav-item:hover:after{
   text-decoration: none;
   font-size: 25px;
   color: #E5383B;
-  /*color: #818181;*/
   display: block;
-  transition: 0.3s;
   font-weight: 500;
-  position: relative;
+
 }
 
 .sidenav a:hover {
   color: #E5383B;
 }
 
+.sidenav_style{
+  transition: 0.3s;
+  position: relative;
+}
 
-.sidenav a:after {
+.sidenav_style:after {
   content: '';
   position: absolute;
   height: 2px;
@@ -370,7 +372,7 @@ header .nav-item:hover:after{
   background-color: #E5383B;
   transition: 0.2s;
 }
-.sidenav a:hover:after {
+.sidenav_style:hover:after {
   width: 100%;
   transition: 0.2s;
 }
