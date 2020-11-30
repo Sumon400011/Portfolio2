@@ -1,0 +1,19 @@
+@import "variables";
+
+
+#header{
+	.card{
+		// .card-up
+		.avatar{
+			width: 160px;
+			margin-top: -80px;
+		}
+		.card-body{
+			.job-title-text{
+				font-weight: bold;
+			    font-size: 1.5rem;
+				color: $rich-black;
+			}
+		}
+	}
+}

@@ -51,7 +51,7 @@
 
 
     <!-- Main navigation -->
-    <header>
+      <div class="main_navigation">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar z-depth-0 pb-2">
             <div class="container-fluid">
@@ -65,10 +65,10 @@
                   
                   <ul class="navbar-nav ml-auto smooth-scroll">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#head">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_me" data-offset="100">About Me</a>
+                        <a class="nav-link" href="about.html" data-offset="100">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio" data-offset="100"> Portfolios</a>
@@ -86,7 +86,6 @@
         </nav>
         <!-- Navbar -->
 
-
         <!-- ============= side nav ================ -->
         <div id="mySidenav" class="sidenav d-flex justify-content-center align-items-center text-center">
           <div>
@@ -98,9 +97,13 @@
           </div>
         </div>
 
+      </div>
+        
 
+        
+
+    <header>
         <!-- Full Page Intro -->
-
         <div id="intro-section" class="view">
           <img src="assets/img/dark.jpg" class="img-fluid  main_img">
 
@@ -111,32 +114,24 @@
 
             <!-- Mask & flexbox options-->
             <div class="mask d-flex justify-content-start align-items-center">
-                <!-- Content -->
-                <div class="container px-md-3 px-sm-0">
-                    <!--Grid row-->
-                    <div class="row wow fadeIn">
-                        <!--Grid column-->
-                        <div class="col-md-12 mb-4 white-text wow fadeIn intro_content">
-                            <span class="display-4 font-weight-bold white-text mb-0 pt-md-5 pt-5 " id="typed"></span>
+              <div class="container px-md-3 px-sm-0">
+                  <div class="row wow fadeIn">
+                    <div class="col-md-12 mb-4 white-text wow fadeIn intro_content">
+                        <span class="display-4 font-weight-bold white-text mb-0 pt-md-5 pt-5 " id="typed"></span>
                             
                             <hr class="hr-light my-4 w-25" >
                             
                             <h4 class="subtext-header mt-2 mb-4">Frontend Web Developer</h4>
                             
                             <a href="#!" class="btn btn-rounded hireMe_btn">
-									             <i class="fas fa-paper-plane mr-2"></i> Hire Me
+									           <i class="fas fa-paper-plane mr-2"></i> Hire Me
                             </a>
                             
                         </div>
-                        <!--Grid column-->
                     </div>
-                    <!--Grid row-->
                 </div>
-                <!-- Content -->
             </div>
-            <!-- Mask & flexbox options-->
         </div>
-        <!-- Full Page Intro -->
     </header>
 
 
@@ -148,7 +143,7 @@
 
 	<!-- ====== About Me ====================== -->
 
-  <section id="about_me" class="w-100 py-50 min-h100 mb-50 border shadow">
+  <section id="about_me" class="w-100 py-50 min-h100 mb-50 ">
    <span class="display-3 font-weight-bold text-dark head_text mb-0">ABOUT ME</span>
     
    <div class="container">
@@ -291,7 +286,7 @@
 
   <!-- ====== experience ====================== -->
 
-  <section id="experience" class="w-100 py-50 min-h100 mb-50 border shadow" style="background-color: #f3f3f5;">
+  <section id="experience" class="w-100 py-50 min-h100 mb-50 " style="background-color: #f3f3f5;">
 
     <div class="container">
 
@@ -405,7 +400,7 @@
 
   <!-- ====== skills_set =====================  -->
 
-  <section id="skills_set" class="w-100 py-50 min-h100 mb-50 border shadow">
+  <section id="skills_set" class="w-100 py-50 min-h100 mb-50 ">
    <div class="container">
 
       <div class="section-heading text-lg-left text-center wow fadeIn mb-4" data-wow-delay="0.2s">Skill Sets</div>
@@ -507,7 +502,7 @@
 
 	<!-- ====== Portfolio =====================  -->
 
-	<section id="portfolio" class="w-100 py-40 min-h100 mb-50 border shadow" style="background-color: #ECEFF1">
+	<section id="portfolio" class="w-100 py-40 min-h100" style="background-color: #ECEFF1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
@@ -628,7 +623,7 @@
 
 	<!-- ====== Testimonial =====================  -->
 
-	<section id="testimonial" class="w-100 py-50 min-h100 mb-50 border shadow">
+	<section id="testimonial" class="w-100 py-50 min-h100 ">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
@@ -801,7 +796,7 @@
 
 	<!-- =============== Contact =============== -->
  
-	<section id="contact" class="w-100 py-50 min-h100 shadow" style="background-color: #0B090A">
+	<section id="contact" class="w-100 py-50 min-h100 " style="background-color: #0B090A">
     <div class="container">
       
       <div class="row mb-3">
@@ -1044,10 +1039,8 @@
 	<!-- animation for safari browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
 
-  
-
-
-
+  <!-- Custom Script -->
+  <script type="text/javascript" src="assets/js/custom_script.js"></script>
 
 
   <!-- Side Nav Script -->
@@ -1065,150 +1058,6 @@
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript">
 
-    // Adding animations to the sections
-    $("section").addClass("wow fadeIn");
-    $("section").attr("data-wow-delay", "0.2s");
-
-    // ======= initialize scrollspy =======
-    $('body').scrollspy({
-      target: '.dotted-scrollspy'
-    });
-
-    // ======= tooltip =======
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip({
-        trigger:'hover'
-      });
-    });
-
-  
-
-
-
-
-    // =========== Active Navbar ================
-		$(document).ready(function(){
-
-			var page_link = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
-			$("header .navbar li a").each(function(){
-				if($(this).attr("href") == page_link)
-					// $(this).css({
-					// 	'background-color' : 'rgb(96,96,184)'
-					// });
-					$(this).addClass(".nav-active");
-				else
-					$(this).removeClass(".nav-active");
-			});
-		});
-    
-    
-
-    // ================ show Time ================
-      (function () {
-        function checkTime(i) {
-          return (i < 10) ? "0" + i : i;
-        }
-
-        function startTime() {
-            var today = new Date(),
-              h = checkTime(today.getHours()),
-              m = checkTime(today.getMinutes()),
-              s = checkTime(today.getSeconds());
-            
-              document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-              
-              t = setTimeout(function () {
-                  startTime()
-              }, 500);
-
-
-            if(h>=5 && h<12){
-              document.getElementById('greet').innerHTML = "Good Morning";
-            }
-            else if(h>=12 && h<15){
-              document.getElementById('greet').innerHTML = "Good Noon";
-            }
-            else if(h>=15 && h<17){
-              document.getElementById('greet').innerHTML = "Good Afternoon";
-            }
-            else if(h>=17 && h<21){
-              document.getElementById('greet').innerHTML = "Good Evening";
-            }
-            else{
-              document.getElementById('greet').innerHTML = "Good Night";
-            }
-        }
-        startTime();
-         
-    })();
-
-
-
-
-    // =========== type js initialization ================
-    var typed = new Typed('#typed', {
-      strings: ["Hello!", "This Is", "Sumon Mondol"],
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 3000,
-      loop: true
-    });
-
-
-
-		// =========== owlCarousel ================
-    $('.owl-carousel').owlCarousel({
-				loop:true,
-				autoplay:true,
-				margin:10,
-				smartSpeed:450,
-				responsiveClass:true,
-				responsive:{
-						0:{
-							items:1,
-							nav:false
-						},
-						600:{
-							items:2,
-							nav:false
-						},
-						1000:{
-							items:4,
-							nav:true,
-							dots: false,
-							loop:true
-
-	          }
-	      }
-	  })
-
-
-
-		// =========== Mixitup ================
-		$(document).ready(function(){
-        var container = document.querySelector('.mix_container');
-        // var mixer = mixitup('.mix_container');
-
-        var mixer = mixitup(container, {
-          controls: {
-            toggleLogic: 'and'
-          }
-        });
-		});
-    
-
-
-
-    // Animations Init
-    // new WOW().init();
-
-
-
-   	$( document ).ready(function() {
-			new WOW().init();
-		});
-
-    
   </script>
 
 </body>
