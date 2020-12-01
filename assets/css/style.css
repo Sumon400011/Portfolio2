@@ -567,6 +567,20 @@ line-height: 22px;
 		margin-right: auto!important;
 	}
 
+	#footer .up_arrow_btn {
+		position: absolute;
+		right: 32px;
+		top: 0;
+		font-size: 19px;
+		margin-top: -24px;
+		color: gray;
+		height: 50px;
+		width: 33px;
+		background-color: black;
+		text-align: center;
+		transition: 0.5s;
+	}
+
 }
 
 
@@ -607,6 +621,19 @@ line-height: 22px;
 		font-size: 20px!important;
 		color: white;
     }
+    #footer .up_arrow_btn {
+		position: absolute;
+		right: 32px;
+		top: 0;
+		font-size: 19px;
+		margin-top: -24px;
+		color: gray;
+		height: 50px;
+		width: 33px;
+		background-color: black;
+		text-align: center;
+		transition: 0.5s;
+	}
 }
 
 
