@@ -37,7 +37,7 @@
     
 
    
-   if (window.location.href.substr(window.location.href.lastIndexOf("/") + 1) == "index.html") {
+   // if (window.location.href.substr(window.location.href.lastIndexOf("/") + 1) == "index.html") {
 	   
    	// ================ show Time ================
 	   (function () {
@@ -104,7 +104,7 @@
 	        }
 	      });
 	   });
-   }
+   // }
 
 
 
