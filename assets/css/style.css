@@ -351,8 +351,19 @@ header,
     text-transform: capitalize;
 }
 
-
-
+.contact_social_button button{
+	width: 100px;
+	height: 60px;
+	border: 2px solid gray;
+	color: gray;
+	font-size: 20px;
+	border-radius: 0px;
+}
+.contact_social_button button:hover{
+	border: 2px solid #E5383B;
+	color: #E5383B;
+	border-radius: 0px;
+}
 
 
 /* ==== side Nav =========== */
